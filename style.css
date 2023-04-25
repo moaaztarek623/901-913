@@ -1,0 +1,54 @@
+*{
+    font-family: 'Cairo';
+    padding: 0;
+    margin: 0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+h1{
+    font-size: 24px;
+}
+.screen-1,
+.screen-2{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 15px;
+    border-bottom: 1px solid #ddd;
+    width: fit-content;
+    padding-bottom: 20px;
+}
+.screen-2{
+    border: none;
+}
+input{
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    padding: 5px;
+    border: 1px solid #E91E63;
+    font-weight: 700;
+}
+.code-1,
+.code-2{
+    font-weight: bold;
+    font-size: 30px;
+    color: #fff;
+    border: 1px solid;
+    width: fit-content;
+    border-radius: 15px;
+    background: #2196F3;
+    padding: 0 30px;
+}
