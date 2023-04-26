@@ -3,7 +3,12 @@
     padding: 0;
     margin: 0;
 }
+span{
+    color: #2196F3;
+}
 body{
+    background: rgb(241,247,217);
+    background: linear-gradient(90deg, rgba(241,247,217,1) 0%, rgba(212,212,249,1) 35%, rgba(217,239,244,1) 100%);
     display: flex;
     flex-direction: column;
     height: 100vh;
@@ -32,13 +37,8 @@ h1{
 input{
     outline: none;
     border: none;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
     padding: 5px;
-    border: 1px solid #E91E63;
+    border: 1px solid #2196F3;
     font-weight: 700;
 }
 .code-1,
@@ -52,3 +52,120 @@ input{
     background: #2196F3;
     padding: 0 30px;
 }
+footer{
+    background: #eee;
+    padding: 15px;
+    border-right: 5px solid #2196F3;
+}
+footer span{
+    background-color: transparent;
+    position: relative;
+    cursor: pointer;
+    transition: color 0.3s;
+    -webkit-transition: color 0.3s;
+    -moz-transition: color 0.3s;
+    -ms-transition: color 0.3s;
+    -o-transition: color 0.3s;
+}
+footer span:hover{
+    color: #006ac0;
+}
+@media (max-width: 768px) {
+  .screen-1 > h1,
+  .screen-2 > h1 {
+    font-size: 16px;
+  }
+  footer{
+    background: #eee;
+    padding: 5px;
+    border-right: 3px solid #2196F3;
+    margin: 25px;
+}
+footer h1,
+footer span{
+  font-size: 15px;
+}
+}
+.inputs {
+    position: relative;
+  }
+  
+  input {
+    background-color: #f9f9f9;
+    color: rgb(0, 0, 0);
+    font-size: inherit;
+    font-family: inherit;
+    padding: 0.35em 0.45em;
+    border: 1px solid transparent;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  input:focus {
+    outline: none;
+  }
+  
+  span {
+    position: absolute;
+    background-color: #2196F3;
+    transition: transform 0.1s ease;
+  }
+  
+  .bottom,
+  .top {
+    height: 2px;
+    left: 0;
+    right: 0;
+    transform: scaleX(0);
+  }
+  
+  .left,
+  .right {
+    width: 2px;
+    top: 0;
+    bottom: 0;
+    transform: scaleY(0);
+  }
+  
+  .bottom {
+    bottom: 0;
+    transform-origin: bottom right;
+  }
+  
+  input:focus ~ .bottom {
+    transform-origin: bottom left;
+    transform: scaleX(1);
+  }
+  
+  .right {
+    right: 0;
+    transform-origin: top right;
+    transition-delay: 0.05s;
+  }
+  
+  input:focus ~ .right {
+    transform-origin: bottom right;
+    transform: scaleY(1);
+  }
+  
+  .top {
+    top: 0;
+    transform-origin: top left;
+    transition-delay: 0.15s;
+  }
+  
+  input:focus ~ .top {
+    transform-origin: top right;
+    transform: scaleX(1);
+  }
+  
+  .left {
+    left: 0;
+    transform-origin: bottom left;
+    transition-delay: 0.25s;
+  }
+  
+  input:focus ~ .left {
+    transform-origin: top left;
+    transform: scaleY(1);
+  }
+  
