@@ -11,7 +11,7 @@ input_2.oninput = function () {
     for (let i = 901; i <= 926; i++) {
         (em_2.push(i.toString()))
         for (let j = 0; j < arrayOfChars.length; j++) {       
-            if (input_2.value == arrayOfChars[j]) {
+            if (input_2.value == arrayOfChars[j] || input_2.value == arrayOfChars[j].toUpperCase()) {
                 code_2.innerHTML = `${(em_2[j])}`
             }
         }
